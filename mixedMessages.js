@@ -8,9 +8,23 @@ readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
 
 // Create a set of random words to create sentences
-const subjects = ["The cat", "A programmer", "My neighbor", "The astronaut", "A curious dog"];
-const actions = ["jumps over", "writes code for", "bakes", "paints", "fixes"];
-const objects = ["a giant cake.", "a new website.", "the morning newspaper.", "a mysterious door.", "a flying car."];
+const subjects = [
+    "The cat", "A programmer", "My neighbor", "The astronaut", "A curious dog",
+    "The scientist", "A musician", "The wizard", "An old man", "A young girl",
+    "The teacher", "A detective", "The chef", "A superhero", "The alien"
+];
+
+const actions = [
+    "jumps over", "writes code for", "bakes", "paints", "fixes",
+    "discovers", "runs away from", "investigates", "sings about", "creates",
+    "imagines", "designs", "finds", "dances with", "transforms"
+];
+
+const objects = [
+    "a giant cake.", "a new website.", "the morning newspaper.", "a mysterious door.", "a flying car.",
+    "a lost treasure.", "a magical spell.", "an ancient book.", "a futuristic city.", "a talking parrot.",
+    "a hidden message.", "a forgotten melody.", "a secret passage.", "a floating island.", "a glowing crystal."
+];
 
 // Func takes an array and replies with a random word
 function getRandomWord(array) {
